@@ -3,3 +3,12 @@
 # Слова во всех предложениях должны быть приведены к верхнему регистру.
 # Между словами вместо пробела ставится символ "_".
 # После записи откройте этот файл, считайте содержимое и выведите его на экран.
+new = open("New_file4.txt", "w+", encoding="utf-8")
+for i in range(1):
+    s = input('Введите предложение')
+    new.write(s.upper().replace(' ', '_'))
+    new.write('\n')
+new.close()
+with open('New_file4.txt', encoding="utf-8") as f:
+    z = f.read()
+print(z)
