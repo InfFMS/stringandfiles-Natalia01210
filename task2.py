@@ -9,7 +9,7 @@ with open('task2.txt', encoding="utf-8") as f:
     while(s.find('Python') != -1):
         s = s[:s.find('Python')] + 'Питон' + s[s.find('Python') + 6:]
         cnt += 1
-new = open("New_file", "w+")
+new = open("New_file2.txt", "w+")
 new.write(s)
 new.close()
 print(cnt)
